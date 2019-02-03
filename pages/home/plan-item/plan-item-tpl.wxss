@@ -1,0 +1,37 @@
+
+.plan-container{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color:#fff;
+}
+.plan-container text{
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 150px;
+  align-items: center;
+}
+checkbox {
+margin-left: 190px;
+width: 20px;
+height: 20px;
+color: #000;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #4C98F7;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+

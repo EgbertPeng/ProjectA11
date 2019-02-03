@@ -1,0 +1,53 @@
+<import src="class-item/class-item-tpl.wxml"/>
+
+<view class="search">
+    <view class="searchItem">
+          <image src="{{searchicon}}"></image>
+          <input class="input-search"  placeholder='搜索你想要的课程、文章' placeholder-style='color:#999999;font-size:14px'></input>
+    </view>
+</view>
+
+<swiper indicator-dots = "true" autoplay="true" interval="3000" 
+indicator-color='#8a8a8a' indicator-active-color='#fff' circular="true" class="swiper-block" bindchange="swiperChange" previous-margin="50rpx" next-margin="50rpx" current="0">
+
+<block wx:for="{{imgUrls}}" wx:index="{{index}}">
+
+<swiper-item class="swiper-item">
+
+<image mode="aspectFill" src="{{item}}" class="slide-image {{currentIndex == index ? 'active' : ''}}" />
+
+</swiper-item>
+
+</block>
+
+</swiper>
+
+<view class='head-container'>
+   <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_signin.png"/>
+       <text class="con-text">签到</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_note.png"/>
+       <text class="con-text">笔记</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_grade.png"/>
+       <text class="con-text">成绩查询</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_timer.png"/>
+       <text class="con-text">考试倒计时</text>
+    </view>
+    </view>
+<view class="sep"/>
+<view class="recommend">
+    <text class="rec-title">个性推荐</text>
+</view>
+<view class="classes">
+  <block wx:for="{{classImgs}}" wx:for-item="item" wx:for-index="idx">
+      <view class="class-item" catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+           <template is="classItemTpl" data="{{...item}}" />
+     </view>
+  </block>
+</view>

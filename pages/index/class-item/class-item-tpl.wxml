@@ -1,0 +1,10 @@
+ <template name="classItemTpl">
+    <view class="post-container">
+        <image class="classImg" src='{{classImg}}'/>
+        <text class="className">{{className}}</text>
+        <view class="classInfo">
+            <text class="txt1">共计<text class='classNum'>{{classNum}}</text>课时</text>
+            <text class='txt2'><text class="classLearned">{{classLearned}}</text>位同学已学</text>
+        </view>
+    </view>
+ </template>

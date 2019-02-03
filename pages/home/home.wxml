@@ -1,0 +1,61 @@
+<!--pages/home/home.wxml-->
+<import src="class-item/class-item-tpl.wxml" />
+<import src="plan-item/plan-item-tpl.wxml"/>
+<view class="container">
+   <view class="head-welcome">
+      <text class="userName">彭小刚，早上好</text>
+      <image class="weatherIcon" src="{{weatherData.weatherIcon}}"/>
+      <image class="notification" src="/images/icon/wx_app_notif.png"/>
+   </view>
+   <view class='head-container'>
+   <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_signin.png"/>
+       <text class="con-text">签到</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_note.png"/>
+       <text class="con-text">笔记</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_grade.png"/>
+       <text class="con-text">成绩查询</text>
+    </view>
+    <view class="head-control">
+       <image class="con-icon" src="/images/icon/wx_app_timer.png"/>
+       <text class="con-text">考试倒计时</text>
+    </view>
+    </view>
+    <view class="class-form">
+      <view class="formTitle">
+        <image src='/images/icon/wx_app_class.png'></image>
+          <text>今日课表</text>
+          <view class="thisWeekForm">
+              <text>查看本周课表</text>
+             <image src='/images/icon/right_Arrow.png'></image>
+          </view>
+      </view>
+      <text class="date">第十一周      星期五</text>
+        <block wx:for="{{classList}}" wx:for-item="item" wx:for-index="idx">
+            <view catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+                <template is="classItemTpl" data="{{...item}}" />
+            </view>
+         </block>
+    </view>
+
+    <view class="plan-form">
+      <view class="formTitle">
+        <image src='/images/icon/wx_app_list.png'></image>
+          <text>清单</text>
+          <image class="addIcon" src='/images/icon/wx_app_add.png'></image>
+          
+      </view>
+      <text style='font-size:10px;color:#666666;margin-left: 35px;'>掌握自己的时间</text>
+        <block wx:for="{{planList}}" wx:for-item="item" wx:for-index="idx">
+            <view catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+                <template is="planItemTpl" data="{{...item}}" />
+            </view>
+         </block>
+    </view>
+    
+</view>
+

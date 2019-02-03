@@ -1,0 +1,6 @@
+ <template name="planItemTpl">
+ <view class="plan-container">
+        <text class="planInfo">{{planInfo}}</text>
+        <checkbox class='planStatus' checked="{{isFinished}}"></checkbox>
+    </view>
+ </template>

@@ -1,0 +1,12 @@
+ <template name="classItemTpl">
+ <view class="post-container">
+        <text class="selection">{{selection}}</text>
+      <view class="class-detail">
+        <text class="classInfo">{{classInfo}}</text>
+        <view class="class-bottom">
+              <image class="posIcon" src="/images/icon/wx_app_pos.png"></image>
+              <text class='position'>{{position}}</text>
+        </view>
+      </view>
+    </view>
+ </template>
