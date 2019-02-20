@@ -1,6 +1,6 @@
 /* pages/home/home.wxss */
 
-@import "class-item/class-item-tpl.wxss";
+@import "class-item/item-tpl.wxss";
 @import "plan-item/plan-item-tpl.wxss";
 .container{
   padding: 0;

@@ -1,0 +1,67 @@
+.post-container{
+  margin-top: 10px;
+  background: #fff;
+  padding-top: 10px;
+    padding-bottom: 20px;
+}
+.post-content{
+  margin-left: 24rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.post-images{
+  margin-top: 5px;
+  margin-left: 24rpx;
+}
+.post-image{
+  width: 226rpx;
+  height: 226rpx;
+  float: left;
+  margin-right: 12rpx;
+  margin-bottom: 12rpx;
+}
+.post-comment{
+  margin-left: 24rpx;
+  width: 702rpx;
+  margin-top: 20px;
+ display: flex;
+ flex-direction: row;
+  height: 40rpx;
+  border-bottom: 2px #efeff4 solid;
+  padding-bottom: 10px;
+}
+.post-comment image{
+  margin: 0;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+}
+.post-comment textarea{
+  height: 40rpx;
+  margin-left: 16rpx;
+  font-size: 22rpx;
+  padding-top: 9rpx;
+}
+
+.post-control{
+  margin-top: 21rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 22rpx;
+  line-height: 16px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.post-control image{
+  margin-left: 40px;
+  height: 30rpx;
+  width:32rpx;
+  margin-right: 8px;
+}
+
+.post-control text{
+  margin-right: 40px;
+  color: #666666;
+}

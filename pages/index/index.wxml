@@ -1,5 +1,5 @@
 <import src="class-item/class-item-tpl.wxml"/>
-
+<import src="class-item/class-item-tpl2.wxml"/>
 <view class="search">
     <view class="searchItem">
           <image src="{{searchicon}}"></image>
@@ -40,8 +40,13 @@ indicator-color='#8a8a8a' indicator-active-color='#fff' circular="true" class="s
        <text class="con-text">考试倒计时</text>
     </view>
     </view>
+
+
 <view class="sep"/>
+
+
 <view class="recommend">
+    <image src='/images/icon/laoshi.png ' class="csf"></image>
     <text class="rec-title">个性推荐</text>
 </view>
 <view class="classes">
@@ -50,4 +55,60 @@ indicator-color='#8a8a8a' indicator-active-color='#fff' circular="true" class="s
            <template is="classItemTpl" data="{{...item}}" />
      </view>
   </block>
+  <view class="more">
+        <text class="moreText">为您推荐更多</text>
+        <image  class="arrow" src='/images/icon/right_Arrow_blue.png'></image>
+  </view>
 </view>
+
+
+<view class="ssep"/>
+
+
+<view class="recommend">
+    <image src='/images/icon/renqike.png ' style='float:left;width:36rpx; height:45rpx;'></image>
+    <text class="rec-title">人气课</text>
+</view>
+<view class="classes">
+  <block wx:for="{{topClass}}" wx:for-item="item" wx:for-index="idx">
+      <view class="class2-item" catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+           <template is="classItemTpl2" data="{{...item}}" />
+     </view>
+  </block>
+<view class="renqimore">
+        <text class="moreText">更多人气课</text>
+        <image  class="arrow" src='/images/icon/right_Arrow_blue.png'></image>
+  </view>
+</view>
+
+<view class="ssep"/>
+
+<view class="recommend">
+   <image src='/images/icon/laoshi.png ' class="csf"></image>
+    <text class="rec-title">名师推荐</text>
+</view>
+
+<scroll-view scroll-x="true" style="margin-top:10px; white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+<block wx:for="{{teaUrls}}" wx:for-item="item" wx:for-index="idx">
+     <view style="padding-left:40rpx;display:inline-block;width: 190rpx; height: 180px;">      <view style='display:flex;flex-direction:column;'>
+          <image style="width: 180rpx; height: 220rpx;  " class="teaImg"src="{{item.teaImg}}"></image>
+          <text class='teaName'>{{item.teaName}}</text>
+          <text class='teaInfo'>{{item.school}}</text>
+          <text class='teaInfo'>{{item.stuLearned}}</text>
+          </view>
+ </view>
+  </block>
+</scroll-view>
+<view class="teamore" style='height:40px;'>
+        <text class="moreText">更多名师</text>
+        <image  class="arrow" src='/images/icon/right_Arrow_blue.png'></image>
+</view>
+<view class="ssep"/>
+<view style='background: #efeff4;height:50px;'>
+    <view class="moreArticle">
+         <text style='margin-left:60px;font-size:28rpx;font-family:PingFang SC;font-weight:600;color:rgba(29,95,255,1);opacity:1;'>去看看为您推荐的文章</text>
+         <image  class="arrow" src='/images/icon/right_Arrow_blue.png'/>
+    </view>
+</view>
+

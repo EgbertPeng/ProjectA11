@@ -1,0 +1,12 @@
+ <template name="classItemTpl2">
+    <view class="post-container2">
+        <image class="classImg2" src='{{classImg}}'/>
+        <view class="class-detail">
+            <text class="className">{{className}}</text>
+              <view class="classInfo2">
+                  <text class="classRank">TOP<text style='margin-left:5px;' >{{classRank}}</text></text>
+                  <text class='top-txt2'><text class="classLearned">{{classLearned}}</text>位同学已学</text>   
+          </view>
+    </view>
+    </view>
+ </template>

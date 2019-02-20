@@ -1,0 +1,27 @@
+<import src="post-item/post-item-tpl.wxml"/>
+<image class="postBtn" src='/images/icon/wx_app_post.png'></image>
+<view class="modeChange">
+    <text class="recommend-btn">推荐</text>
+    <text class="followed-btn">关注</text>
+</view>
+<view class="TopBar">
+   <view class='user-avatar'>
+      <image src='{{avatarUrl}}'></image>
+   </view> 
+   <view class='user-name'>
+      <view class='user-nickName'>
+          <text>{{nickName}}</text>
+      </view>
+      <view class='user-info'>
+          <text >关注  {{followNum}}</text>
+          <text style=' margin-left:10px;font-size:18rpx;border-left:1px solid rgba(153,153,153,1);'></text>
+          <text style='margin-left:10px;'>粉丝  {{followedNum}}</text>
+      </view>
+   </view>
+</view>
+
+<block wx:for="{{posts}}" wx:for-item="item" wx:for-index="idx">
+    <template is="postDetailTpl" data="{{...item}}" />
+ </block>
+  
+

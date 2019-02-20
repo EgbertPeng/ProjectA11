@@ -1,0 +1,77 @@
+view.search{
+   display: flex;
+   flex-direction: row;
+   height:60rpx;
+   background: #fff;
+   align-items: center;
+ }
+ 
+ view.searchItem{
+   display: flex;
+   width: 100%;
+   background: #efeff4;
+   flex-direction: row;
+   border-radius: 10rpx;
+   margin-left: 35rpx;
+
+}
+
+view.searchItem image{
+  height: 42rpx;
+  width: 42rpx;
+  align-self: center;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+
+ .input-search{
+
+flex: 1;
+
+ font-size: 30rpx;
+    
+}
+.cancelBtn{
+  margin-left: 10px;
+  margin-right: 5px;
+  width: 40px;
+  font-size: 26rpx;
+  color: #666666;
+}
+
+
+.rec{
+    margin-top: 20px;
+    height: 120px;
+}
+.title{
+  
+  margin-left: 20px;
+  font-size: 28rpx;
+}
+.recItem{
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  border: 1rpx solid #1D5FFF;
+  border-radius: 8rpx;
+  padding: 3px 7px 3px 7px;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+
+.hty{
+ margin-top: 10px;
+}
+
+.htyItem{
+  float: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  border: 1rpx solid #1D5FFF;
+  border-radius: 8rpx;
+  padding: 3px 7px 3px 7px;
+  font-size: 28rpx;
+  color: #666666;
+}

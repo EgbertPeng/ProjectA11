@@ -1,0 +1,14 @@
+<!--pages/edit/edit.wxml-->
+<view class="input-box">
+    <textarea class="inputEdit" placeholder='我们都是文明的好孩子'></textarea>
+    <view class="submit">
+          <view class="sub-btn" catchtap='submitEdit'>发布</view>
+          <text class="text-num">140字</text>
+    </view>
+</view>
+
+
+<view class='image-box'>
+
+    <image class="add" src='/images/icon/wx_app_addimg.png'></image>
+</view>

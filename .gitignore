@@ -8,6 +8,16 @@ $RECYCLE.BIN/
 .fseventsd
 .Spotlight-V100
 .TemporaryItems
+ # Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
 .Trashes
 
 # Node.js

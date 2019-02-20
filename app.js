@@ -21,6 +21,7 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
+    
 
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
@@ -34,6 +35,29 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    g_userInfo:null
+  },
+
+  _getUserInfo:function(){
+      var userInfoStorage = wx.getStorageSync('user');
+      if(!userInfoStorage){
+        var that = this;
+        wx.login({
+          success:function(){
+            wx.getUserInfo({
+              success:function(res){
+                that.globalData.userInfo = res.userInfo
+                wx.setStorageSync('user', res.userInfo)
+              },
+              fail:function(res){
+                console.log(res);
+              }
+            })
+          }
+        })
+      }
+      else{
+        this.globalData.userInfo = userInfoStorage;
+      }
   }
 })

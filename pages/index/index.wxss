@@ -1,5 +1,6 @@
  @import "../home/home.wxss";
  @import "class-item/class-item-tpl.wxss";
+@import "class-item/class-item-tpl2.wxss";
 
  page{
    background: #fff;
@@ -100,15 +101,26 @@ z-index: 20;
 
 }
 
+.csf{
+  margin-top: 3px;
+  float: left;
+  width: 28px;
+  height:22px;
+}
+
 .recommend{
-  padding: 10rpx 30rpx;
+  margin-top: 10px;
+  height: 53rpx;
+  padding-left: 40rpx;
   width: 100%;
   background: #fff;
 }
 .rec-title{
-margin: 5px;
- font-weight: 700;
-  width: 200px;
+margin-left:10px;
+font-size: 38rpx;
+font-weight: 700;
+width: 200px;
+
 }
 .classes{
   padding: 20rpx;
@@ -119,9 +131,58 @@ margin: 5px;
   margin-left: 20rpx;
 }
 
+.class2-item{
+  width:100%;
+  height: 80px;
+  margin-left: 20rpx;
+}
+
 
 .sep{
   width: 100%;
   height: 5px;
   background: #efeff4;
+}
+.ssep{
+  width: 100%;
+  height: 10px;
+  background: #efeff4;
+}
+.more{
+  align-content: center;
+  margin-top: 500px;
+}
+.arrow{
+  margin-left: 10px;
+  margin-top: 1px;
+  width: 16rpx;
+  height: 24rpx;
+}
+
+.moreText{
+margin-left: 275rpx;
+font-size:28rpx;
+font-family:PingFang SC;
+font-weight:600;
+color:rgba(29,95,255,1);
+opacity:1;
+}
+
+.moreArticle{
+  padding-top: 5px;
+  margin-left: 15%;
+  height:  40px;
+  width: 70%;
+  background: #fff;
+  border-radius:45rpx;
+}
+
+.teaName{
+  font-weight: 700;
+    font-size: 28rpx;
+}
+
+.teaInfo{
+  font-weight: lighter;
+    font-size: 22rpx;
 }

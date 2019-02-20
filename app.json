@@ -1,6 +1,10 @@
 {
   "pages":[
+    "pages/post-detail/post-detail",
+    "pages/community/community",
+    "pages/edit/edit",
     "pages/index/index",
+    "pages/search/search",
     "pages/home/home"    
   
   ],

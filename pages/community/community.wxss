@@ -1,0 +1,69 @@
+ @import "post-item/post-item-tpl.wxss";
+
+page{
+   background: #efeff4;
+}
+.postBtn{
+  width: 90rpx;
+  height: 90rpx;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 20;
+}
+.recommend-btn{
+  color: #1D5FFF;
+  font-size: 38rpx;
+  margin-left: 24rpx;
+}
+
+.followed-btn{
+  color: #666666;
+  font-size: 30rpx;
+  margin-left: 60rpx;
+}
+
+.modeChange{
+  background: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px ridge;
+   z-index: 0;
+}
+
+.TopBar{
+  background: #fff;
+  height: 100rpx;
+  display: flex;
+  padding: 20rpx 0;
+}
+.TopBar .user-avatar{
+  margin: 0 24rpx;
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+}
+
+.user-avatar image{
+  vertical-align: top;
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50rpx;
+}
+
+.user-name{
+  margin-right: 30rpx;
+  flex: 1;
+}
+
+.user-nickName text{
+  font-size: 38rpx;
+}
+
+.user-info text{
+  font-size: 22rpx;
+  color: #707070;
+}
+

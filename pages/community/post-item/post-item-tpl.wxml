@@ -1,0 +1,23 @@
+ <template name="postDetailTpl">
+
+<view class="post-container">
+  <text class="post-content">{{postContent}}</text>
+  <view class="post-images">
+      <block wx:for="{{postImages}}" wx:for-item="item" wx:for-index="idx">
+            <image class="post-image" src="{{item}}" mode='aspectFit'/>
+      </block>
+  </view>
+  <view class="post-comment">
+      <image class="avatarUrl" src="{{avatarUrl}}"/>
+      <textarea placeholder='不超过20个字...'></textarea>
+  </view>
+  <view class="post-control">
+      <image src='/images/icon/wx_app_like.png'/>
+      <text>{{collectionNum}}</text>
+      <image src='/images/icon/wx_app_comment.png'/>
+      <text>{{commentNum}}</text>
+      <image src='/images/icon/wx_app_share.png'/>
+      <text>{{shareNum}}</text>
+  </view>
+</view>
+</template>

@@ -1,0 +1,25 @@
+<view class="search">
+    <view class="searchItem">
+          <image src="{{searchicon}}"></image>
+          <input class="input-search"  placeholder='搜索你想要的课程、文章' placeholder-style='color:#999999;font-size:14px'></input>
+    </view>
+     <text class="cancelBtn">取消</text>
+</view>
+
+<view class="rec">
+    <text class="title">大家都在搜</text>
+    <view >
+        <block wx:for="{{recItems}}" wx:for-item="item" wx:for-index="idx">
+            <text class="recItem">{{item}}</text>
+       </block>
+  </view>
+</view>
+
+<view class="hty">
+    <text class="title">历史记录</text>
+    <view  >
+        <block wx:for="{{htyItems}}" wx:for-item="item" wx:for-index="idx">
+            <text class="htyItem">{{item}}</text>
+       </block>
+  </view>
+</view>

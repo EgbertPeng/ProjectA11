@@ -1,0 +1,58 @@
+<scroll-view scroll-y="true" style=" height:560px;white-space: nowrap; display: flex" >
+<view class="TopBar">
+   <view class='user-avatar'>
+      <image src='{{avatarUrl}}'></image>
+   </view> 
+   <view class='user-name'>
+      <view class='user-nickName'>
+          <text>{{nickName}}</text>
+      </view>
+      <view class='user-info'>
+          <text > {{date}}</text>
+          
+      </view>
+   </view>
+   <view class="user-control">
+        <text>关注</text>
+   </view>
+</view>
+
+<view class="post-container">
+  <text class="post-content">{{postContent}}</text>
+  <view class="post-images">
+      <block wx:for="{{postImages}}" wx:for-item="item" wx:for-index="idx">
+            <image class="post-image" src="{{item}}" mode='aspectFit'/>
+      </block>
+  </view>
+
+  <view class='border'></view>
+
+  <view class="post-control">
+      <image src='/images/icon/wx_app_like.png'/>
+      <text>{{collectionNum}}</text>
+      <image src='/images/icon/wx_app_comment.png'/>
+      <text>{{commentNum}}</text>
+      <image src='/images/icon/wx_app_share.png'/>
+      <text>{{shareNum}}</text>
+  </view>
+</view>
+
+<view class="commentArea">
+    <text style='color:#333333,font-size:28rpx;margin:0 24rpx 0 24rpx; border-bottom :1px  #efeff4 solid; padding-bottom:10px;' >评论</text>
+    <block wx:for="{{comments}}" wx:for-item="item" wx:for-index="idx">
+        <view class='comment-avatar'>
+            <image src='{{item.userImg}}'></image>
+            <view class='comment-info'>
+                <text class="comment-nickName">{{item.nickName}}</text>
+                <text class="comment-date">{{item.date}}</text>
+                <text class="comment-content">{{item.content}}</text>
+            </view>
+
+      </view>
+    </block>
+</view>
+</scroll-view>
+<view class="post-comment">
+      <textarea placeholder='回复{{nickName}}:'></textarea>
+      <text class="submitBtn">发送</text>
+  </view>

@@ -49,6 +49,78 @@ Page({
 
      
     ],
+
+
+    topClass: [
+      {
+        classImg: '/images/class/01.png',
+        className: '前端基础',
+        classRank: 1,
+        classLearned: 923
+      },
+
+      {
+        classImg: '/images/class/02.png',
+        className: 'Android零基础入门',
+        classRank: 2,
+        classLearned: 23
+      },
+
+      {
+        classImg: '/images/class/03.png',
+        className: 'Java零基础入门',
+        classRank: 3,
+        classLearned: 103
+      },
+
+      {
+        classImg: '/images/class/04.png',
+        className: 'Python入门基础',
+        classRank: 4,
+        classLearned: 523
+      },
+      {
+        classImg: '/images/class/04.png',
+        className: 'java',
+        classRank: 5,
+        classLearned: 523
+      }
+    ],
+
+
+    teaUrls: [
+      {
+        teaImg: '/images/teacher/tea1.png',
+        teaName: 'Derrick',
+        school: '南开大学',
+        stuLearned: 923
+      },
+
+      {
+        teaImg: '/images/teacher/tea2.png',
+        teaName: '刘造时',
+        school: '杭州电子科技大学',
+        stuLearned: 923
+      },
+
+      {
+        teaImg: '/images/teacher/tea3.png',
+        teaName: '余克勤',
+        school: '浙江大学',
+        stuLearned: 923
+      },
+
+      {
+        teaImg: '/images/teacher/tea4.png',
+        teaName: '黄强辉',
+        school: '南开大学',
+        stuLearned: 923
+      }
+      
+    ],
+
+
+
     searchicon:'/images/icon/wx_app_search.png',
     currentIndex: 0,
 
