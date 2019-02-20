@@ -32,7 +32,7 @@ Page({
         userImg: '/images/teacher/tea3.png',
         nickName: 'Tommy',
         date: "01/22",
-        content: '太爽了吧'
+        content: '这个也太爽了吧'
       }
   ]
   },
