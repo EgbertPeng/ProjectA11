@@ -20,7 +20,7 @@ Page({
        userImg:'/images/teacher/tea1.png',
         nickName:'Tom',
         date:"01/22",
-        content:'太帅了吧'
+        content:'这个太帅了吧'
     },
     {
       userImg: '/images/teacher/tea2.png',
