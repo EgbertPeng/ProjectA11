@@ -50,15 +50,16 @@ page{
   height:36rpx;
   background: #1D5FFF;
   border-radius:8rpx;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .user-control text{
   font-size: 22rpx;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 
 }
 

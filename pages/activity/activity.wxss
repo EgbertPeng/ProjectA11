@@ -1,0 +1,40 @@
+/* pages/activity/activity.wxss */
+page{
+  background: #efeff4;
+}
+.container{
+  padding: 10px 0 10px 0;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.dateTitle{
+  margin-left: 24rpx;
+  font-weight: 500;
+  font-size: 38rpx;
+}
+.article-detail{
+  margin: 0 24rpx 0 61rpx;
+  padding: 10px 0 30px 0;
+  border-bottom: 1px #efeff4 solid;
+}
+.article-title{
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.article-info text{
+  color: #666666;
+  font-size: 22rpx;
+}
+.tab2detail text{
+    font-size:22rpx;
+}
+.tab2detail image{
+  margin-left: 5px;
+  height:18rpx;
+  width: 12rpx;
+}
+
+.tab2detail{
+  position: absolute;
+  right: 20px;
+}

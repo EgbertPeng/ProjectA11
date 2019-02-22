@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/activity/activity",
     "pages/post-detail/post-detail",
     "pages/community/community",
     "pages/edit/edit",
