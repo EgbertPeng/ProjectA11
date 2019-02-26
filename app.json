@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/notification/notification",
     "pages/activity/activity",
     "pages/post-detail/post-detail",
     "pages/community/community",

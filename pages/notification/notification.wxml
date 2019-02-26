@@ -1,0 +1,29 @@
+<!--index.wxml-->  
+<view class="swiper-tab">
+    <view style='width: 50%;  display: inline-block;text-align: center;'>
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">通知</view>  
+    </view>
+    <view  style='width: 50%; display: inline-block;text-align: center; '>
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">私信</view>  
+      </view>
+</view>
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+       
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+          <block wx:for="{{notifications}}" wx:index="{{index}}">
+          <view class="nfc-item">
+              <image class='nfc-head' src="{{item.nfcHead}}"/>
+              <view style='display:flex;flex-direction:column;width:200px;float:left;text-align:left;'>
+                  <text class="nfc-user" style='font-size:32rpx;'>{{item.nfcUser}}</text>
+                  <text class="nfc-info" style='font-size:28rpx;color:#666666;text-align:left;'>{{item.nfcInfo}}</text>
+              </view>
+              <text class="nfc-date" style=' margin-right:60rpx;font-size:22rpx;color:#666666;float:right;'>{{item.nfcDate}}</text>
+          </view>
+       </block>
+    </swiper-item>  
+</swiper> 
