@@ -1,8 +1,10 @@
 /**index.wxss**/  
     .swiper-tab{  
+      background: #fff;
         width: 100%;  
         line-height: 80rpx;
-        }  
+       
+     }  
     .swiper-tab-list{  font-size: 30rpx;  
         display: inline-block;  
         text-align: center;
@@ -13,13 +15,12 @@
         
         border-bottom: 5rpx solid #1D5FFF;}
     .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
-    .swiper-box view{  
-        text-align: center;  
-    }
+  
 
 .nfc-item{
   width: 100%;
   height: 80rpx;
+  background: #fff;
   padding: 30rpx 30rpx 30rpx 30rpx;
 }
 .nfc-head{
@@ -28,4 +29,56 @@
     border-radius: 40rpx;
     margin-right: 20px;
     float: left;
+}
+
+
+page{
+  background: #efeff4;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 0;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.dateTitle{
+  text-align: left;
+  margin-left: 24rpx;
+  font-weight: 500;
+  font-size: 38rpx;
+}
+.article-detail{
+  margin: 0 24rpx 0 61rpx;
+  padding: 10px 0 30px 0;
+  border-bottom: 1px #efeff4 solid;
+}
+.article-title{
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.article-info text{
+color: #666666;
+font-size: 22rpx;
+display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+overflow: hidden;
+text-overflow:ellipsis;
+
+}
+.tab2detail text{
+    font-size:22rpx;
+}
+.tab2detail image{
+  margin-left: 5px;
+  height:18rpx;
+  width: 12rpx;
+}
+
+.tab2detail{
+  position: absolute;
+  right: 20px;
 }

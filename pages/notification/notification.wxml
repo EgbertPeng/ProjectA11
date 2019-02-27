@@ -11,7 +11,29 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
     <!-- 我是哈哈 -->  
     <swiper-item>  
-       
+      <scroll-view scroll-y="true" style="height:{{winHeight}}px; ">
+          <block wx:for="{{articles}}" wx:index="{{index}}">
+                <view class="container">
+                      <view class='dateTitle'>
+                        <text>{{item.date}}</text>
+                       </view>
+                     <block wx:for="{{item.details}}" wx:index="{{index}}">
+                         <view class="article-detail">
+                             <view class="article-title">
+                                  <text>{{item.title}}</text>
+                              </view>
+                              <view class="article-info">
+                                    <text>{{item.info}}</text>
+                              </view>
+                              <view class="tab2detail">
+                                  <text>查看详情</text>
+                                  <image src='/images/icon/right_Arrow.png'></image>
+                              </view>
+                          </view>
+           </block>
+          </view>
+        </block>
+      </scroll-view>  
     </swiper-item>  
     <!-- 我是呵呵 -->  
     <swiper-item>  
