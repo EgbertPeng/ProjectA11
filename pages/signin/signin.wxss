@@ -1,0 +1,22 @@
+/* pages/signin/signin.wxss */
+.container{
+  padding-top: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container image{
+  width: 95rpx;
+  height: 65rpx;
+  margin-bottom: 30rpx;
+}
+
+.container .title{
+  font-size: 38rpx;
+  font-weight: 400;
+}
+.container text{
+  font-size: 50rpx;
+  font-weight: 600;
+}

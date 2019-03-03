@@ -1,0 +1,7 @@
+<!--pages/signin/signin.wxml-->
+
+<view class='container'>
+    <image src='/images/icon/wx_app_complete.png'></image>
+    <text class="title">{{classTitle}}</text>
+    <text>{{signStatue}}</text>
+</view>
