@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="classinfo" wx:if="{{cardstatu}}">
+    <view style='width:200px;height:200px;background:#ABE3FF;  display: flex;flex-direction: column;'>
+          <text class="cancelBtn" bindtap='cancel'>关闭</text>
+          <view style=' display: flex;flex-direction: column; justify-content: center;align-items: center;padding-top:10px;'>
+              <text style='font-size:40rpx;color:#000;font-weight:700;' >{{classinfo.classTitle}}</text>
+               <text style='font-size:28rpx; color:#333;'>{{classinfo.classPc}}</text>
+                <text style='font-size:28rpx; color:#333;'>{{classinfo.classDate}}</text>
+         </view>
+    </view> 
+</view>
+<view class="date">
+    <text style='font-size:28rpx;color:#333'>{{week}}</text>
+    <text style='font-size:22rpx;color:#666'>{{term}}</text>
+</view>
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll">
+  <view style="height:1200rpx;width:730rpx;display:flex;">
+    <view style="background-color:#fff;color:#666666;">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="left">
+        {{item}}
+      </view>
+    </view>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}">
+      <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;">
+      </view>
+    </view>
+
+    <!--课表-->
+    <view wx:for="{{wlist}}">
+      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}"  style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100}}rpx;height:{{item.skcd*90}}rpx;background-color:{{colorArrays[index%6]}}">
+        <view class="text" >{{item.kcmc}}</view>
+        <view class="smalltext" >{{item.cp}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
