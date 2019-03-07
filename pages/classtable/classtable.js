@@ -36,6 +36,7 @@ Page({
 
   showCardView(event){
     var classId = event.currentTarget.dataset.index;
+    var color = this.data.colorArrays[classId%6];
     var classTitle = this.data.wlist[classId].kcmc;
     var classPc = this.data.wlist[classId].cp;
     var class1 = this.data.wlist[classId].skjc;
@@ -53,7 +54,7 @@ Page({
     var classDate = day+class1+'-'+class2+'节';
     this.setData({
       cardstatu:true,
-      classinfo:{ classTitle ,classPc ,classDate}
+      classinfo:{ classTitle ,classPc ,classDate,color}
     })
   },
 
