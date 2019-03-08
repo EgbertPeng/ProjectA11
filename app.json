@@ -1,6 +1,7 @@
 {
   "pages":[
-      "pages/note/note",
+    "pages/grades/grades",
+    "pages/note/note",
     "pages/note/edit/edit",
     "pages/classtable/classtable",
     "pages/logs/logs",
