@@ -1,0 +1,8 @@
+<!--pages/note/edit/edit.wxml-->
+<view class='container' style="padding-left:24rpx;padding-right:24rpx;height:{{winHeight}}px">
+    <view class='head' style='display:flex;flex-direction:row; right:0;'>
+      <input  style="width:624rpx;border-bottom:1px #DDDDDD solid;padding-bottom: 7rpx;font-szie:32rpx;"placeholder='点击输入标题' placeholder-style='color:#999999;font-weight:700;' bindinput='changeInput'></input>
+      <text style='font-szie:32rpx;color:{{colorStatu}};font-weight:700;'>完成</text>
+    </view>
+   <textarea placeholder='输入正文' style='margin-top:20px;width:704rpx;font-size:28rpx;height:100%;'></textarea>
+</view>

@@ -1,0 +1,15 @@
+.note-item{
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  padding: 30rpx 30rpx 30rpx 30rpx;
+}
+
+.postBtn{
+  width: 90rpx;
+  height: 90rpx;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 20;
+}

@@ -1,9 +1,9 @@
 {
   "pages":[
+      "pages/note/note",
+    "pages/note/edit/edit",
     "pages/classtable/classtable",
-    "pages/classtable/class-detail/class-detail",
     "pages/logs/logs",
-    "pages/note/note",
     "pages/index/index",
     "pages/signin/signin",
     "pages/notification/notification",
