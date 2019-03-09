@@ -12,7 +12,6 @@
               <text class="note-date" style=' margin-right:10rpx;font-size:22rpx;color:#666666;float:right;'>{{item.noteDate}}</text>
               
           </view>
-          <image class="postBtn" src='/images/icon/wx_app_post.png' bindtap='gotoEdit'></image>
 </block>
 
-
+<image wx:if="{{isEmpty==false}}"class="postBtn" src='/images/icon/wx_app_post.png' bindtap='gotoEdit'></image>

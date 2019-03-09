@@ -1,0 +1,11 @@
+<view class='container' style="padding-left:24rpx;padding-right:24rpx;height:{{winHeight}}px">
+    <view class='head' style='display:flex;flex-direction:row; right:0;'>
+      <input  style="width:624rpx;border-bottom:1px #DDDDDD solid;padding-bottom: 7rpx;font-size:32rpx;"placeholder='请输入事件标题' placeholder-style='color:#999999;font-weight:700;' bindinput='changeInput'></input>
+      <text style='font-size:32rpx;color:{{colorStatu}};font-weight:700;right:24rpx;position:absolute;'>完成</text>
+    </view>
+    <view style='display:flex;flex-direction:row;align-items:center;margin-top:10px;border-bottom:1px #dddddd solid;padding-bottom:3px;'>
+    <text style='float:left;font-size:32rpx;color:#333333;font-weight:700;'>时间</text>
+      <picker class='time-picker' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" style='font-size:28rpx;color:#999999;width:25%;right:30rpx;position:absolute;font-weight:700;'>{{startDate}}</picker>
+       <image src='/images/icon/right_Arrow.png' style='width:12rpx;height:22rpx;float:right;right:24rpx;position:absolute;'></image>
+      </view>
+</view>

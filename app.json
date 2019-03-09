@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/timer/timer",
+    "pages/timer/edit/edit",
     "pages/grades/grades",
     "pages/note/note",
     "pages/note/edit/edit",

@@ -1,0 +1,19 @@
+<view style='display:flex;flex-direction:column;align-items:center;  position: absolute;z-index: 200; width:100%;height:100%;margin-top:40%;'  wx:if="{{isEmpty}}">
+      <image src="/images/icon/timer.png" style='width:125rpx;height:150rpx;' bindtap='gotoEdit'></image>
+      <text style='color:#333333;font-size:32rpx;margin-top:10px;'>添加一个倒计时</text>
+</view>
+<block wx:if="{{isEmpty==false}}"wx:for="{{notes}}" wx:index="{{index}}">
+          <view class="note-item" >
+              <view style='display:flex;flex-direction:column;width:200px;float:left;text-align:left;'>
+                  <text class="note-title" style='font-size:32rpx;margin-top:10px;font-weight:600;'>{{item.noteTitle}}</text>
+              </view>
+              <view style='display:flex;flex-direction:row;position:absolute;right:30rpx;'>
+                 <text style='font-size:50rpx;margin-right:7px;'>{{item.noteDay}}</text>
+                    <text style='font-size:20rpx;padding-top:16px;'>Day</text>
+              </view>
+        
+              
+          </view>
+</block>
+<image wx:if="{{isEmpty==false}}" class="postBtn" src='/images/icon/wx_app_post.png' bindtap='gotoEdit'></image>
+
