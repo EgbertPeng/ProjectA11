@@ -1,0 +1,44 @@
+<view class="video-item">
+    <video id="myVideo" src="{{videoUrl}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls objectFit="cover"  show-center-play-btn="{{true}}" ></video>
+</view>
+<view style='padding:30rpx 24rpx 30rpx 24rpx;'>
+    <image src='/images/icon/wx_app_share2.png' style='width:40rpx;height:37rpx;position:absolute;right:24rpx;margin-top:5px;'></image>
+    <text class="className">{{className}}</text>
+    <view class="classInfo">
+          <text class="txt1">共计<text      class='classNum'>{{classNum}}</text>课时</text>
+           <text class='txt2'><text class="classLearned">{{classLearned}}</text>位同学已学   </text>
+      </view>
+      <block wx:for="{{tabList}}">
+        <text style="font-size:22rpx;background:#eeeeee;color:#707070;padding:4rpx 10rpx 4rpx 10rpx;border-radius:8rpx;float:left;margin-right:5px;margin-top:5px;">{{item}}</text>
+        </block>
+ </view>
+ <!-- >下面为课程详细内容<-->
+ <view class="swiper-tab" style='display:flex;flex-direction:row;margin-top:10px;'>  
+    
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">课程介绍</view>  
+ 
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">老师介绍</view>  
+
+     
+       <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">章节</view>  
+
+</view>    
+
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+      <scroll-view scroll-y="true" style="height:{{winHeight}}px; ">
+          <block wx:for="{{classImgs}}" wx:index="{{index}}">
+               <image src='{{item}}' style='width:100%;'></image>
+        </block>
+      </scroll-view>  
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+          test2    
+    </swiper-item>  
+    <swiper-item>  
+          test3      
+    </swiper-item>  
+</swiper> 

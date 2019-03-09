@@ -1,0 +1,64 @@
+.video-item{
+  position: relative;
+  width: 100%;
+  height: 420rpx;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+.classInfo{
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 330rpx;
+}
+ .txt1{
+   padding-right: 22rpx;
+  color: #8a8a8a;
+  font-size: 10px;
+   border-right: 1px solid #8a8a8a;
+}
+.txt2{
+  margin-left: 10px;
+  width: 120px;
+  color: #8a8a8a;
+  font-size: 22rpx;
+ 
+}
+.className{
+  margin-top: 5px;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px; 
+}
+
+.classNum{
+  color: #515151;
+  font-size: 22rpx;
+  
+}
+.classLearned{
+  color: #515151;
+  font-size: 22rpx;
+}
+
+
+
+.swiper-tab{  
+      background: #fff;
+        width: 100%;  
+        line-height: 80rpx;
+       
+     }  
+    .swiper-tab-list{  
+        display: inline-block;  
+        text-align: center;
+        width: 20%;  
+        color: #707070;  
+        font-size:30rpx;
+    }  
+    .on{ color: #1D5FFF;  
+        font-size:38rpx;
+         width: 30%;  
+        }
+    .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
