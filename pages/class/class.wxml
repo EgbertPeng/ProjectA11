@@ -1,0 +1,55 @@
+<view class="video-item">
+    <video id="myVideo" src="{{videoUrl}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls objectFit="cover"  show-center-play-btn="{{true}}" ></video>
+</view>
+
+
+<view class="swiper-tab" style='display:flex;flex-direction:row;'>  
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">章节</view>  
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">讨论</view>  
+</view>    
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+      <scroll-view scroll-y="true" style="height:{{winHeight}}px; ">
+          <block wx:for="{{sections}}" wx:index="{{index}}">
+              <view class="section" style='padding-left:64rpx;padding-right:24rpx;padding-top:10px;'>
+                  <text style='font-size:28rpx;color:#333333;'>{{item.secTitle}}</text>
+                   <block wx:for="{{item.items}}">
+                      <view class="item" style='display:flex;align-items:center;'>
+                            <image src='/images/icon/item_unfinished.png' style='width:24rpx;height:24rpx;float:left;'> </image>
+                            <view style='margin-left:20px;border-bottom:1px #eeeeee solid;width:100%;'>
+                                <text style='font-size:28rpx;color:#666666;'>{{item}}</text>
+                            </view>
+                       </view>
+                     </block>
+              </view>
+        </block>
+      </scroll-view>  
+    </swiper-item>  
+    <!-- 讨论模块 -->  
+    <swiper-item>  
+        <scroll-view scroll-y="true" style="height:{{commentHeight}}px; ">
+          <view class="commentArea">
+            <block wx:for="{{comments}}" wx:for-item="item" wx:for-index="idx">
+              <view class='comment-avatar'>
+                    <image src='{{item.userImg}}'></image>
+                      <view class='comment-info'>
+                            <text class="comment-nickName">{{item.nickName}}</text>
+                              <text class="comment-date">{{item.date}}</text>
+                                <text class="comment-content">{{item.content}}</text>
+                        </view>
+
+                  </view>
+                </block>
+            </view>
+      </scroll-view>  
+      <view class="post-comment">
+                  <textarea placeholder='回复{{nickName}}:'></textarea>
+                  <text class="submitBtn">发送</text>
+            </view>
+    </swiper-item>  
+    <swiper-item>  
+          test3      
+    </swiper-item>  
+</swiper> 

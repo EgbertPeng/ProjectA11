@@ -1,0 +1,105 @@
+.video-item{
+  position: relative;
+  width: 100%;
+  height: 420rpx;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-tab{  
+      background: #fff;
+        width: 100%;  
+        line-height: 80rpx;
+        border-bottom:1px #eeeeee solid;
+       
+     }  
+    .swiper-tab-list{  
+        display: inline-block;  
+        text-align: center;
+        width: 50%;  
+        color: #707070;  
+        font-size:30rpx;
+    }  
+    .on{ color: #1D5FFF;  
+        font-size:38rpx;
+         width: 50%;  
+        }
+    .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+/**评论区样式**/
+    .commentArea{
+  margin-top: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 0;
+}
+.comment-avatar{
+  padding: 10px 24rpx 0 24rpx;
+}
+
+.comment-avatar image{
+  float:left;
+  vertical-align: top;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+}
+
+.comment-name{
+  margin-right: 30rpx;
+  flex: 1;
+}
+
+.comment-info{
+  margin-right: 24rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  border-bottom: 1px #efeff4 solid;
+}
+ .comment-nickName{
+  font-size: 32rpx;
+  color: #000;
+}
+.comment-date{
+  font-size: 22rpx;
+  color: #707070;
+}
+ .comment-content{
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 32rpx;
+  color: #000;
+ }
+
+ .post-comment{
+  position: fixed;
+  bottom: 0px;
+
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+  height: 100rpx;
+  background:#F5F5F5;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-comment textarea{
+  height: 40rpx;
+  font-size: 29rpx;
+  padding-top: 9rpx;
+}
+
+.post-comment text{
+  height: 100rpx;
+  width: 100rpx;
+  font-size: 28rpx;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

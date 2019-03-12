@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/class/class",
     "pages/class-detail/class-detail",
     "pages/activity/activity",
     "pages/timer/timer",
