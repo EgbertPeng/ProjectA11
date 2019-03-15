@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/class/class",
+    "pages/study/study",
+    "pages/class/class", 
     "pages/class-detail/class-detail",
     "pages/activity/activity",
     "pages/timer/timer",
@@ -13,7 +14,6 @@
     "pages/index/index",
     "pages/signin/signin",
     "pages/notification/notification",
-    
     "pages/post-detail/post-detail",
     "pages/community/community",
     "pages/edit/edit",

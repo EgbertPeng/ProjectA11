@@ -1,0 +1,33 @@
+<view style='display:flex;flex-direction:row;height:290rpx;background:#fff;'>
+    <view>
+          <image src='/images/class/07.png' style='width:293rpx;height:218rpx;margin-top:36rpx;margin-left:24rpx;'></image>
+    </view>
+    <view style='display:flex;flex-direction:column;padding-top:58rpx;padding-left:34rpx;'>
+        <text style='font-size:28rpx;color:#333333;font-weight:700;'>已连续学习{{days}}天</text>
+        <text style='font-size:22rpx;color:#707070;;margin-top:10rpx;'>今日学习</text>
+        <view style='display:flex;flex-direction:row;;margin-top:10rpx;'>
+             <text style='font-size:28rpx;color:#333333;'>{{minutes}}</text>
+              <text style='font-size:22rpx;color:#707070;margin-left:10rpx;'>分钟</text>
+        </view>
+        <view style='width:375px;height:0px;border-bottom:1px solid rgba(238,238,238,1);margin-top:20rpx;'></view>
+        <text style='font-size:18rpx;color:#707070;;margin-top:10rpx;'>在忙也不能忘记学习，记得每天来哦！</text>
+    </view>
+</view>
+
+<view style='background:#fff;margin-top:10px; padding-left:24rpx;padding-right:24rpx;padding-top:34rpx;min-height:{{minHeight}}px;'>
+    <view style='display:flex;flex-direction:row;margin-bottom:10px'>
+        <image src='/images/icon/wx_app_path1.png' style='width:45rpx;height:40rpx;'></image>
+        <text style='margin-left:10px;font-weight:700;'>学分课</text>
+    </view>
+    <block wx:for="{{classlist}}" index="{{index}}">
+        <view style='display:flex;flex-direction:column;border-bottom:1px #EEEEEE solid;padding-bottom:5px;'>
+            <text style='font-size:28rpx;font-weight:600;margin-top:10px;'>{{item.classTitle}}</text>
+            <text style='font-size:22rpx;color:#707070;margin-top:5px;'>已学习{{item.process}}%</text>
+            <view style='margin-top:-5px;'>
+                  <text style='font-size:22rpx;color:#1D5FFF;'>{{notif[index]}}</text>
+                  <text  wx:if="{{item.test}}"style='position:absolute;right:170rpx;font-size:28rpx;color:#1D5FFF;background:#eee;border-radius:8px;padding:5rpx 10rpx;'>测验</text>
+                  <text style='position:absolute;right:24rpx;font-size:28rpx;color:#1D5FFF;background:#eee;border-radius:8px;padding:5rpx 10rpx;'>去学习</text>
+            </view>
+        </view>
+    </block>
+</view>
