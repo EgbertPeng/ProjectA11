@@ -1,0 +1,73 @@
+/**index.wxss**/  
+    .swiper-tab{  
+      background: #fff;
+        width: 100%;  
+        line-height: 80rpx;
+       
+     }  
+    .swiper-tab-list{  font-size: 30rpx;  
+        display: inline-block;  
+        text-align: center;
+        width: 50%;  
+        color: #707070;  
+    }  
+    .on{ color: #1D5FFF;  font-weight: 700;
+        font-size: 32rpx;  
+        border-bottom: 5rpx solid #1D5FFF;}
+    .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+  
+
+
+
+page{
+  background: fff;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 24rpx 0 24rpx;
+  padding: 10px 0 14px 0;
+  background: #fff;
+  border-bottom: 1px #efeff4 solid;
+}
+.dateTitle{
+  text-align: left;
+  margin-left: 24rpx;
+  font-weight: 500;
+  font-size: 38rpx;
+}
+.article-detail{
+  padding: 10px 0 10px 0;
+}
+.article-title{
+  font-size: 32rpx;
+  font-weight: 500;
+  display:-webkit-box;
+  word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+}
+.article-info text{
+color: #666666;
+font-size: 22rpx;
+display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+overflow: hidden;
+text-overflow:ellipsis;
+
+}
+
+.tab2detail image{
+  margin-top:10px;
+  margin-left: 5px;
+  position: absolute;
+  right:110px;
+  height:18rpx;
+  width: 10rpx;
+}
+

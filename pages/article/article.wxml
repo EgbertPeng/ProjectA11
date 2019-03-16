@@ -1,0 +1,87 @@
+<!--index.wxml-->  
+<view class="swiper-tab">
+    <view style='width: 50%;  display: inline-block;text-align: center;'>
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>  
+    </view>
+    <view  style='width: 50%; display: inline-block;text-align: center; '>
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">关注</view>  
+      </view>
+</view>
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>  
+      <scroll-view scroll-y="true" style="height:{{winHeight}}px; ">
+          <view>
+                <view class="article-detail" style="padding-left:24rpx;display:flex;flex-direction:row;">
+                              <image src='{{recTop.imgUrl}}' style='width:500rpx;height:195rpx;'></image>
+                              <view class="article-info" style='margin-left:10px;'>
+                                    <text style='font-size:28rpx;color:#333333;font-weight:700;'>{{recTop.date}}</text>
+                                      <view class="article-title" style='border-bottom:1px #eeeeee solid;padding-right:24rpx;margin-top:10px;' >
+                                           <text style='font-size:28rpx;padding-bottom:15px;color:#333333;font-weight:700; display:-webkit-box;word-break: break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow: hidden;text-overflow:ellipsis;'>{{recTop.title}}</text>
+                                       </view>
+                            
+                                        <view class="tab2detail" style='display:flex;flex-direction:row;margin-top:5px;'>
+                                          <block wx:for="{{recTop.tabs}}">
+                                            <text style='font-size:22rpx;background:#EEEEEE;border-radius:8rpx;padding:4rpx 10rpx;color:#707070;margin-right:5px;'>{{item}}</text>
+                                          </block>
+                                            <text style='position: absolute;right: 40rpx; font-size:22rpx; color: #707070;'>{{recTop.read}}位同学已读</text>
+                                             <image src='/images/icon/right_Arrow.png' style='position: absolute;right: 24rpx;margin-top:10rpx;'></image>
+                                          </view>
+                                  </view>        
+                          </view>
+          </view>
+          <block wx:for="{{recommends}}" wx:index="{{index}}">
+                <view class="container" style='display:flex;flex-direction:row;'>
+                         <view class="article-detail">
+                             <view class="article-title">
+                                  <text>{{item.title}}</text>
+                              </view>
+                              <view class="article-info">
+                                    <text>{{item.info}}</text>
+                              </view>
+                              <view class="tab2detail">
+                                    <block wx:for="{{item.tabs}}" index="{{index}}">
+                                        <text style='font-size:22rpx;background:#EEEEEE;border-radius:8rpx;padding:4rpx 10rpx;color:#707070;margin-right:5px;'>{{item}}</text>
+                                   </block>
+                                  <text style='position: absolute;right: 120px; font-size:22rpx; color: #707070;margin-top:6px;'>{{item.read}}位同学已读</text>
+                                  <image src='/images/icon/right_Arrow.png'></image>
+                              </view>
+                          </view>
+                          <view>  
+                              <image src='{{item.imgUrl}}' style='width:180rpx;height:180rpx;margin-top:10px;border-radius:4px;'></image>
+                          </view>
+                      
+          </view>
+        </block>
+      </scroll-view>  
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+          <scroll-view scroll-y="true" style="height:{{winHeight}}px; ">
+          <block wx:for="{{follows}}" wx:index="{{index}}">
+                <view class="container" style='display:flex;flex-direction:row;'>
+                         <view class="article-detail">
+                             <view class="article-title">
+                                  <text>{{item.title}}</text>
+                              </view>
+                              <view class="article-info">
+                                    <text>{{item.info}}</text>
+                              </view>
+                              <view class="tab2detail">
+                                    <block wx:for="{{item.tabs}}" index="{{index}}">
+                                        <text style='font-size:22rpx;background:#EEEEEE;border-radius:8rpx;padding:4rpx 10rpx;color:#707070;margin-right:5px;'>{{item}}</text>
+                                   </block>
+                                  <text style='position: absolute;right: 120px; font-size:22rpx; color: #707070;margin-top:6px;'>{{item.read}}位同学已读</text>
+                                  <image src='/images/icon/right_Arrow.png'></image>
+                              </view>
+                          </view>
+                          <view>  
+                              <image src='/images/class/01.png' style='width:180rpx;height:180rpx;margin-top:10px;border-radius:4px;'></image>
+                          </view>
+                      
+          </view>
+        </block>
+      </scroll-view>  
+    </swiper-item>  
+</swiper> 
