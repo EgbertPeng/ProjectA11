@@ -13,41 +13,41 @@ Page({
     trailer: [
       {
         liveImg: '/images/class/01.png',
-        className: '前端基础',
+        liveName: '前端基础',
         teacher: ' egbert',
         watchingNum: 23
       },
 
       {
         liveImg: '/images/class/02.png',
-        className: 'Android零基础入门',
+        liveName: 'Android零基础入门',
         teacher: ' egbert',
         watchingNum: 23
       },
 
       {
         liveImg: '/images/class/03.png',
-        className: 'Java零基础入门',
+         liveName: 'Java零基础入门',
         teacher: ' egbert',
         watchingNum: 923
       },
 
       {
         liveImg: '/images/class/04.png',
-        className: 'Python入门基础',
+         liveName: 'Python入门基础',
         teacher: ' egbert',
         watchingNum: 923
       },
       {
         liveImg: '/images/class/04.png',
-        className: 'java',
+         liveName: 'java',
         teacher: ' egbert',
         watchingNum: 923
       },
 
       {
         liveImg: '/images/class/04.png',
-        className: 'Google',
+       liveName: 'Google',
         teacher: ' egbert',
         watchingNum: 923
       }

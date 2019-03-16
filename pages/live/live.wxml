@@ -16,7 +16,7 @@
 <scroll-view scroll-y='true' style="height:{{winHeight}}px;white-space: nowrap; display: flex;"scroll-into-view='{{toview}}'scroll-with-animation='true'  >
 <!--正在直播板块-->
 <view id='target0' style='background:#fff;padding-top:5px;'>
-       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;'>
+       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;display:flex;flex-direction:row;'>
           <image src='/images/icon/living.png'style="width:43rpx; height:45rpx;"></image>
           <text style='margin-left:13rpx;font-size:38rpx;color:#333333;font-weight:700;'>正在直播</text>
        </view>
@@ -32,8 +32,8 @@
 </view>
 <!--直播预告板块-->
 <view id='target1' style='background:#fff;padding-top:5px;margin-top:5px;'>
-       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;'>
-          <image src='/images/icon/living.png'style="width:43rpx; height:45rpx;"></image>
+       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;display:flex;flex-direction:row;'>
+          <image src='/images/icon/clock.png'style="width:36rpx; height:36rpx;margin-top:5px;"></image>
           <text style='margin-left:13rpx;font-size:38rpx;color:#333333;font-weight:700;'>直播预约</text>
        </view>
       <block wx:for="{{trailer}}" wx:for-item="item" wx:for-index="idx" >
@@ -41,17 +41,27 @@
            <template is="liveItemTpl" data="{{...item}}" />
           </view>
       </block>
+      <view style='padding-top:10px;padding-bottom:10px;display:flex;justify-content:center;align-items:center'>
+          <text style='margin-left:13rpx;font-size:28rpx;color:#1D5FFF;font-weight:700;'>更多直播</text>
+          <image src='/images/icon/right_Arrow_blue.png'style="width:14rpx; height:26rpx;margin-left:18rpx;"></image>
+       </view>
 </view>
 
-<view id='target2' style='background:#fff;padding-top:5px;margin-top:5px;'>
-       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;'>
-          <image src='/images/icon/living.png'style="width:43rpx; height:45rpx;"></image>
+<view id='target2' style='background:#fff;padding-top:5px;margin-top:5px;height:110%;display:flex;flex-direction:column;'>
+       <view style='padding-left:24rpx;margin-bottom:10px;background:#fff;display:flex;flex-direction:row;'>
+          <image src='/images/icon/review.png'style="width:40rpx; height:40rpx;margin-top:2px;"></image>
           <text style='margin-left:13rpx;font-size:38rpx;color:#333333;font-weight:700;'>直播回放</text>
        </view>
-      <block wx:for="{{review}}" wx:for-item="item" wx:for-index="idx" >
-          <view class="class-item" catchtap="onTapToDetail" data-post-id="{{item.postId}}">
-           <template is="liveItemTpl2" data="{{...item}}" style='float:left;' />
+       <view>
+          <block wx:for="{{review}}" wx:for-item="item" wx:for-index="idx" >
+               <view class="class-item" catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+              <template is="liveItemTpl2" data="{{...item}}" style='float:left;' />
           </view>
-      </block>
+          </block>
+      </view>
+      <view style='padding-top:10px;padding-bottom:10px;display:flex;justify-content:center;align-items:center'>
+          <text style='margin-left:13rpx;font-size:28rpx;color:#1D5FFF;font-weight:700;'>更多直播</text>
+          <image src='/images/icon/right_Arrow_blue.png'style="width:14rpx; height:26rpx;margin-left:18rpx;"></image>
+       </view>
 </view>
   </scroll-view>
