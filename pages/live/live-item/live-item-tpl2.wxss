@@ -1,0 +1,46 @@
+.post-container{
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+}
+.classImg{
+  border-radius: 10rpx;
+  width:330rpx;
+  height: 186rpx;
+}
+.classInfo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 330rpx;
+}
+
+.className{
+  margin-top: 5px;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px; 
+display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+}
+
+.classInfo text{
+      font-size:22rpx;
+  color:#707070;
+}
+.class-detail text{
+  display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+}
+

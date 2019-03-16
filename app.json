@@ -1,5 +1,8 @@
 {
   "pages":[
+     "pages/live/live",
+    "pages/live/live-detail/live-detail",
+    "pages/article/article",
     "pages/study/study",
     "pages/class/class", 
     "pages/class-detail/class-detail",

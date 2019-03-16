@@ -1,0 +1,10 @@
+ <template name="liveItemTpl2">
+    <view class="post-container">
+        <image class="classImg" src='{{classImg}}'/>
+        <text class="className">{{className}}</text>
+        <view class="classInfo">
+            <text>{{teacher}}</text>
+            <text style='margin-top:3px;'>{{watchingNum}}位同学看过</text>
+        </view>
+    </view>
+ </template>

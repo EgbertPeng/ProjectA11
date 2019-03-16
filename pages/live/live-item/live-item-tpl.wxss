@@ -1,0 +1,51 @@
+.post-container2{
+  padding-left: 24rpx;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.classImg2{
+  border-radius: 6rpx;
+  width:200rpx;
+  height: 120rpx;
+}
+.class-detail{
+  margin-left: 20px;
+  height: 120rpx;
+  width: 230px;
+}
+.classInfo2{
+  width: 180px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.className{
+  margin-top: 10px;
+  color: #000;
+  font-weight: 700;
+  font-size: 28rpx; 
+display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+}
+
+.classInfo2 text{
+  font-size:22rpx;
+  color:#707070;
+}
+
+.class-detail text{
+  display:-webkit-box;
+line-height: 40rpx;
+word-break: break-all;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+}

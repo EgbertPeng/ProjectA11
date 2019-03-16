@@ -1,0 +1,22 @@
+<!--pages/video/video.wxml-->
+<view class="video_container">
+<video id="myvideo" src="{{post.videoUrl}}" controls='{{false}}' danmu-btn='{{false}}' enable-danmu='true' danmu-list='{{post.danmulist}}' autoplay='{{true}}' loop='{{true}}'  show-play-btn="{{false}}" show-fullscreen-btn="{{false}}" show-center-play-btn="{{false}}" show-progress="{{false}}"></video>
+</view>
+<form>
+<view class="danmuGrop">
+  <input type="text" class="danmuinput" placeholder='说点什么吧~~~' bindblur='getInput'></input>
+  <button class="sendDanmu" bindtap='sendDanmu' form-type='reset'>发送</button>
+</view>
+</form>
+
+<view style='padding:30rpx 24rpx 30rpx 24rpx;'>
+    <image src='/images/icon/wx_app_share2.png' style='width:40rpx;height:37rpx;position:absolute;right:24rpx;margin-top:5px;'></image>
+    <text class="className">{{post.liveName}}</text>
+    <view class="classInfo">
+          <text class="txt1">{{post.watchingNum}}位同学看过</text>
+          
+      </view>
+      <block wx:for="{{post.tabList}}">
+        <text style="font-size:22rpx;background:#eeeeee;color:#707070;padding:4rpx 10rpx 4rpx 10rpx;border-radius:8rpx;float:left;margin-right:5px;margin-top:5px;">{{item}}</text>
+        </block>
+ </view>
