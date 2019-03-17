@@ -77,7 +77,7 @@ Page({
 
       {
         classImg: '/images/class/04.png',
-        className: 'Python入门基础',
+        className: 'Python入门基础哈哈哈哈哈',
         teacher: ' egbert',
         watchingNum: 923
       },

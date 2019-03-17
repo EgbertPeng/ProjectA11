@@ -1,7 +1,7 @@
 var liveList = [
   {
   postId: 1,
-  liveName: "复仇者联盟4：终局之战最新预告",
+  liveName: "复仇者联盟4：终局之战第三支全新预告",
   teacher: "Marvel",
   watchingNum:51,
   date:'3月20日',

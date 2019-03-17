@@ -9,7 +9,7 @@ Page({
     winWidth: 0,
     winHeight: 0,
     currentTab: 0,
-    videoUrl: 'http://yinfans.qiniudn.com/alita-battle-angel-trailer-3_h480p.mov?id=0',
+    videoUrl: 'https://vodkgeyttp9.vod.126.net/cloudmusic/UIAMSz4B_2360215489_shd.mp4?wsSecret=3fcd9fbf18d81120c400963d4dde4a7f&wsTime=1552133128&ext=p9Sx1TzBS7x0EVwREjT7fRh3M0XYpws0Yu3LOYzNVWRLv1TpLzoAIn6CvvlH2ijwuTSjPKeLvuUucO9mpdM99nIInkZUQCilhIL6EolBOoZORtwQTH44jGceiV7nNFOO9twO9KluwZjft44RPCj7NnESMIJYoRHQ7cP8sBL%2B7CX8Jltbdkotnps8xQCUWLkI5c3ujqs1cUURpfiCzT%2BMtQ%2FVfM23wYloNGDYL9fwTmnJgyYMZgHyE6xJt2mSOcbMseKqp%2BNtniFZ0OFXdWLFaGDgxDDQQGC1a9JSLbFqFxZDkFonUwhE07bPqMDfR6JFcOhWG0Z7M%2FUxXUiiNCqHQP2AFf1dbmhgoAhPiNgG%2FDGtlUtppICSHDTqYS4Th0DKSYwILDMqAxjQWLDcb7glTFl7g22gF8%2FbIjMfZGTk4tuEwvqTDScv1c0FPE8rwtFonV0ro6LMLCxM3LKLev%2Fq6mvbDaJfWMqSIE9NRgbynGuVm%2Faiiu6GnqsEG%2BkVzIKg7YSQQJ4YRtu3EieFsyW9DRP9h463MmGNdSvMK0bUqsk%3D',
     className:'阿丽塔:战斗天使',
     classNum:21,
     classLearned:132,
@@ -20,9 +20,10 @@ Page({
     ],
 
     classImgs:[
-        '/images/test/alita2.jpg',
-      '/images/test/alita3.jpg',
-       '/images/test/alita4.jpg'
+      'https://p2.music.126.net/CSqBWfjp3k6xNgsdFSQtBQ==/109951163918662216.gif?param=9999y9999',
+      'https://p2.music.126.net/NyZ8JJpH_iksnH0Z16UICQ==/109951163918666617.gif',
+       'https://p2.music.126.net/PusdfFGjQpm07T48bz0rfQ==/109951163918667124.gif',
+       'https://p2.music.126.net/ME7NJ-YECWhWwDRAAAfyGw==/109951163918666096.gif'
     ]
 
   },
@@ -60,7 +61,6 @@ Page({
           winHeight: res.windowHeight-40  //44为tabbar高度
         });
       },
-
     });
   },
 

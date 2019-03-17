@@ -1,6 +1,6 @@
 {
   "pages":[
-     "pages/live/live",
+   "pages/live/live",
     "pages/live/live-detail/live-detail",
     "pages/article/article",
     "pages/study/study",
