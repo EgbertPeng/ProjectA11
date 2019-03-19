@@ -1,6 +1,9 @@
 {
   "pages":[
-   "pages/live/live",
+        "pages/live/review/review",
+    "pages/live/live",
+    "pages/live/trailer/trailer",
+    "pages/live/living/living",
     "pages/live/live-detail/live-detail",
     "pages/article/article",
     "pages/study/study",

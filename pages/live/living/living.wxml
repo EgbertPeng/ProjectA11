@@ -1,0 +1,20 @@
+<import src="../live-item/live-item-tpl.wxml"/>
+
+<view class="search">
+    <view class="searchItem">
+          <image src="/images/icon/wx_app_search.png"></image>
+          <input class="input-search"  placeholder='搜索你想要的课程、文章' placeholder-style='color:#999999;font-size:14px'></input>
+    </view>
+</view>
+
+<view style='background:#fff;padding-top:5px;'>
+      <block wx:for="{{living}}" wx:for-item="item" wx:for-index="idx" >
+          <view class="class2-item" catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+           <template is="liveItemTpl" data="{{...item}}" />
+          </view>
+      </block>
+      <view style='padding-top:10px;padding-bottom:10px;display:flex;justify-content:center;align-items:center'>
+          <text style='margin-left:13rpx;font-size:28rpx;color:#1D5FFF;font-weight:700;'>去看看直播回放</text>
+          <image src='/images/icon/right_Arrow_blue.png'style="width:14rpx; height:26rpx;margin-left:18rpx;"></image>
+       </view>
+</view>

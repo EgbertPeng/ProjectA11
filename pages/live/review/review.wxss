@@ -1,0 +1,46 @@
+ @import "../live-item/live-item-tpl2.wxss";
+
+page{
+  background: #efeff4;
+}
+
+/**搜索框**/
+  view.search{
+   display: flex;
+   flex-direction: row;
+   height:60rpx;
+   background: #fff;
+   align-items: center;
+ }
+ 
+ view.searchItem{
+   display: flex;
+   width: 100%;
+   background: #efeff4;
+   flex-direction: row;
+   border-radius: 10rpx;
+   margin-right: 24rpx;
+   margin-left: 24rpx;
+
+}
+
+view.searchItem image{
+  height: 42rpx;
+  width: 42rpx;
+  align-self: center;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+
+ .input-search{
+
+flex: 1;
+
+ font-size: 30rpx;
+    
+}
+
+  .class-item{
+  float: left;
+  margin-left: 20rpx;
+}
