@@ -99,6 +99,24 @@ Page({
     ],
   },
 
+
+moreDetail:function(e){
+    var mode = e.target.dataset.mode;
+    console.log(mode);
+    switch(mode){
+      case 0: wx.navigateTo({
+        url: 'living/living' ,
+      });break;
+      case 1: wx.navigateTo({
+        url: 'trailer/trailer' ,
+      });break;
+      case 2: wx.navigateTo({
+        url: 'review/review',
+      });break;
+      default:break;
+    }
+},
+
   bindChange: function (e) {
     var that = this;
     that.setData({ currentTab: e.detail.current });

@@ -1,0 +1,31 @@
+<view class="top">
+    <view class="circle"></view>
+    <image class="head"src='/images/teacher/tea1.png'></image>
+    <text style='margin-top:50px;z-index:3;font-weight:700;font-size:38rpx'>{{nickName}}</text>
+    <view class='info'>
+        <image src='/images/swiper/05.jpg'  ></image>
+        <view style='display:flex;flex-direction:column;margin-top:10px;'>
+            <text style='font-size:28rpx;font-weight:700;color:#333;'>{{school}}</text>
+            <view >
+            <text style='font-size:22rpx;color:#707070'>专业：{{major}}</text>
+            <text style='margin-left:10px;font-size:22rpx;color:#707070'>学号：{{stuid}}</text>
+            </view>
+        </view>
+    </view>
+    <!--处理菜单-->
+    <view style='width:100%;height:500px;background:#F9F9F9;z-index:4;position:absolute;top:500rpx;'></view>
+    <view class="detail" style='z-index:5;position:absolute;top:520rpx;width:100%;'>
+    <block wx:for="{{details}}">
+        <view style='display:flex;flex-direction:row;justify-content:center;align-items:center;height:85rpx;padding-left:24rpx;padding-right:24rpx;background:#fff;'>
+            <view style='justify-content:center;align-items:center;display:flex;width:100%;height:85rpx;border-bottom:1px solid #F9F9F9; '>
+            <image style="width:30rpx;height:30rpx;position:absolute;left:24rpx;"src="{{item.img}}"></image>
+            <text style='position:absolute;left:70rpx;font-size:28rpx;font-weight:700;'>{{item.info}}</text>
+            <image style='position:absolute;right:24rpx;width:12rpx;height:21rpx;' src='/images/icon/right_Arrow.png'></image>
+            </view>
+        </view>
+    </block>
+</view>
+
+</view>
+
+

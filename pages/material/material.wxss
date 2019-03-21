@@ -1,0 +1,71 @@
+page{
+   background: #fff;
+ }
+ view.search{
+   display: flex;
+   flex-direction: row;
+   height:60rpx;
+   background: #fff;
+   align-items: center;
+ }
+ 
+ view.searchItem{
+   display: flex;
+   width: 100%;
+   background: #efeff4;
+   flex-direction: row;
+   border-radius: 10rpx;
+   margin-right: 24rpx;
+   margin-left: 24rpx;
+
+}
+
+view.searchItem image{
+  height: 42rpx;
+  width: 42rpx;
+  align-self: center;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+
+ .input-search{
+
+flex: 1;
+
+ font-size: 30rpx;
+    
+}
+.fileIcon{
+  width: 120rpx;
+  height: 120rpx;
+}
+.downBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+position: absolute;
+margin-top:20px;
+right: 24rpx;
+width:86rpx;
+height:38rpx;
+background:rgba(29,95,255,1);
+color:#fff;
+opacity:1;
+border-radius:8rpx;
+}
+.downedBtn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  position: absolute;
+margin-top:20px;
+right: 24rpx;
+width:86rpx;
+height:38rpx;
+background:#707070;
+color:#fff;
+opacity:1;
+border-radius:8rpx;
+}

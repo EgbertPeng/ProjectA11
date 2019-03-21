@@ -1,0 +1,26 @@
+<view class="search">
+    <view class="searchItem">
+          <image src="/images/icon/wx_app_search.png"></image>
+          <input class="input-search"  placeholder='搜索你想要的课程、文章' placeholder-style='color:#999999;font-size:14px'></input>
+    </view>
+</view>
+<view class='container'>
+    <block wx:for="{{files}}">
+        <view style='height:120rpx; display:flex;flex-direction:row; padding:15rpx 24rpx;'>
+            <image  class="fileIcon"wx:if="{{item.fileType===1}}" src='/images/icon/wx_app_word.png'></image>
+             <image  class="fileIcon"wx:elif="{{item.fileType===2}}" src='/images/icon/wx_app_ppt.png'></image>
+             <image  class="fileIcon"wx:elif="{{item.fileType===3}}" src='/images/icon/wx_app_pdf.png'></image>
+              <image  class="fileIcon"wx:elif="{{item.fileType===4}}" src='/images/icon/wx_app_work.png'></image>
+              <image  class="fileIcon"wx:elif="{{item.fileType===5}}" src='/images/icon/wx_app_discussion.png'></image>
+              <image  class="fileIcon"wx:elif="{{item.fileType===6}}" src='/images/icon/wx_app_file.png'></image>
+                <image  class="fileIcon"wx:else="{{item.fileType===7}}" src='/images/icon/wx_app_unknown.png'></image>
+            <view style='display:flex;flex-direction:column;margin-left:30rpx;height:120rpx;'>
+                <text style='font-size:28rpx;color:#333333;font-weight:700;'>{{item.fileTitle}}</text>
+                <text style='font-size:22rpx;color:#707070;margin-top:10rpx;'>{{item.fileDate}}</text>
+                <text style='font-size:22rpx;color:#707070;margin-top:10rpx;'>{{item.fileDown}}位同学已下载</text>
+            </view>
+            <text class="downBtn" wx:if="{{item.fileStatu===0}}">下载</text>
+            <text class="downedBtn" wx:else="{{item.fileStatu===1}}">已下载</text>
+        </view>
+    </block>
+</view>

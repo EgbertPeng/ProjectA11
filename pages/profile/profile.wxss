@@ -1,0 +1,46 @@
+.top{
+display: flex;
+flex-direction: column;
+ justify-content: center;
+ align-items: center;
+width:100%;
+height:500rpx;
+background:linear-gradient(135deg,rgba(23,234,217,1) 0%,rgba(96,120,234,1) 100%);
+opacity:1;
+z-index:-10;
+}
+.circle{
+  width: 1848rpx;
+  height: 1848rpx;
+  border-radius: 924rpx ;
+  position: absolute;
+  top:100px;
+  background: #fff;
+  z-index: 0;
+}
+
+.top .head{
+  position: absolute;
+  top:135rpx;
+  z-index: 3;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+.info{
+  width: 100%;
+  height: 135rpx;
+  z-index:1;
+  background: #fff;
+  position: absolute;
+  top: 362rpx;
+  display: flex;
+  flex-direction: row;
+}
+.info image{
+  z-index: 1;
+  width:75rpx;
+  height:75rpx;
+  border-radius: 38rpx;
+   margin:30rpx 24rpx;
+}

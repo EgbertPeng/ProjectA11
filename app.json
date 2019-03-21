@@ -1,7 +1,9 @@
 {
   "pages":[
-        "pages/live/review/review",
-    "pages/live/live",
+        "pages/material/material",
+    "pages/profile/profile",
+     "pages/live/live",
+    "pages/live/review/review",
     "pages/live/trailer/trailer",
     "pages/live/living/living",
     "pages/live/live-detail/live-detail",
