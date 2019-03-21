@@ -1,6 +1,7 @@
 {
   "pages":[
-        "pages/material/material",
+    "pages/setting/setting",
+    "pages/material/material",
     "pages/profile/profile",
      "pages/live/live",
     "pages/live/review/review",
