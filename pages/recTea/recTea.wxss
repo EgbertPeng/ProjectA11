@@ -1,0 +1,48 @@
+/* pages/recTea/recTea.wxss */
+page{
+  background: #F9F9F9;
+}
+image{
+  width: 180rpx;
+  height: 220rpx;
+  border-radius: 8rpx;
+}
+
+.container{
+  padding: 30rpx 24rpx;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.classInfo{
+  margin-top: 45px;
+  margin-left: 0px;
+  width: 330rpx;
+}
+
+.txt1{
+   padding-right: 22rpx;
+  color: #8a8a8a;
+  font-size: 22rpx;
+}
+.txt2{
+  margin-left: 10px;
+  width: 120px;
+  color: #8a8a8a;
+  font-size: 22rpx;
+ 
+}
+.follow-btn{
+width:60rpx;
+height:36rpx;
+background:rgba(29,95,255,1);
+border-radius:8rpx;
+font-size: 22rpx;
+color: #fff;
+padding: 3rpx 22rpx;
+display:flex;
+justify-content:center;
+align-items:center;
+}

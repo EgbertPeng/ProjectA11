@@ -1,0 +1,25 @@
+<view style='display:flex;flex-direction:column;justify-content:center;align-items:center;'>
+<block wx:for="{{teas}}" >
+<view class='container'>
+      <image  src='{{item.teaImg}}'></image>
+      <view style='display:flex;flex-direction:column; margin-left:10px;'>
+          <text style='font-size:28rpx;color:#333;font-weight:700;'>{{item.name}}</text>
+          <text style='font-size:22rpx;color:#707070;margin-top:5px;'>{{item.school}} 教授</text>
+         <view class="classInfo">
+            <text class="txt1">开课{{item.classNum}}门</text>
+            <text style=' font-size:18rpx;border-right: 1px solid #8a8a8a;'></text>
+            <text class='txt2'>{{item.classLearned}}位同学已关注</text>
+        </view>
+      </view>
+      <view style='display:flex;justify-content:center;align-items:center;margin-left:30px;'>
+            <text class="follow-btn">关注</text>
+      </view>
+</view>
+</block>
+
+<!--切换用户按钮-->
+    <view style='width:500rpx;height:90rpx;border-radius:45rpx;background:#fff;display:flex;justify-content:center;align-items:center;margin-top:20px;margin-bottom:20px;'>
+        <text style="font-size:28rpx;font-weight:700;color:#1D5FFF;">去看看Ta推荐的文章</text>
+        <image src='/images/icon/right_Arrow_blue.png' style='width:14rpx;height:26rpx;margin-left:5px;'></image>
+    </view>
+ </view>   

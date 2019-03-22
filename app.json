@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/recTea/recTea",
     "pages/setting/setting",
     "pages/material/material",
     "pages/profile/profile",
