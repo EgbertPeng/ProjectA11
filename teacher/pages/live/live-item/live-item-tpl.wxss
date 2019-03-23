@@ -1,0 +1,42 @@
+.post-container2{
+  padding-left: 24rpx;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.classImg2{
+  border-radius: 6rpx;
+  width:200rpx;
+  height: 120rpx;
+}
+.class-detail2{
+  margin-left: 20px;
+  height: 120rpx;
+  width: 230px;
+}
+.classInfo2{
+  width: 180px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.className2{
+  margin-top: 10px;
+  color: #000;
+  font-weight: 700;
+  font-size: 28rpx; 
+    width: 230px;
+   display: block;
+   height: 22px;
+  line-height: 40rpx; 
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow:ellipsis;
+}
+
+.classInfo2 text{
+  font-size:22rpx;
+  color:#707070;
+}
+

@@ -1,0 +1,25 @@
+/* teacher/pages/live/live-post/live-post.wxss */
+text{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.container{
+  background: #ffffff;
+  padding-bottom:10px;
+}
+page{
+  background: #F9F9F9;
+}
+.live-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480rpx;
+  height: 70rpx;
+  color: #fff;
+  background:rgba(29,95,255,1);
+  box-shadow:0px 2px 8px rgba(29,95,255,0.6);
+  opacity:1;  
+  border-radius: 8rpx;
+}

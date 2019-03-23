@@ -1,5 +1,7 @@
 {
   "pages":[
+        "teacher/pages/live/live",
+    "teacher/pages/live/live-post/live-post",
     "pages/recTea/recTea",
     "pages/setting/setting",
     "pages/material/material",
